@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nando's Date Stickers</title>
+  <title>Nando's Date Stickers</title>
 </head>
 <body>
-    <button onclick="runPythonScript()">Run Python Script</button>
+  <button onclick="runPythonScript()">Run Python Script</button>
+  <script>
+    function runPythonScript() {
+      // Get the path to the Python script.
+      var pythonScriptPath = "./script.py";
+      // Run the Python script.
+      subprocess.run(["python", pythonScriptPath]);
+    }
+  </script>
 </body>
 </html>
